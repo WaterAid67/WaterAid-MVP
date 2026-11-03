@@ -12,6 +12,10 @@ The interface is available in English and Khmer. Shared interface messages live 
 
 The language control is in the top navigation. Khmer pages use the embedded Sokha Khmer font with additional line height and flexible component heights for script readability.
 
+## Layout and type
+
+All styles live in the first `<style>` block of `index.html`; colors, spacing and type are set once as custom properties on `:root`. English headings use Newsreader (`assets/fonts/newsreader-latin.woff2`, SIL Open Font License in `assets/fonts/OFL.txt`); Khmer headings and all body text use the embedded Sokha fonts. Laptops get a top navigation bar; at 760px and below the navigation moves to a bottom tab bar and dialogs open as bottom sheets.
+
 ## Learn and community tools
 
 The Learn page includes tap-through WASH stories, bilingual article/video sharing, and an audio control. Articles can provide an `audioUrl`; otherwise the player uses the device's speech synthesis voice. Event tickets and check-in status are saved locally. Ticket QR images encode only a random ticket code; the prototype loads the image from QRServer. The matching banner and donation confirmation are demonstrations and do not process payments or represent a confirmed corporate pledge.
