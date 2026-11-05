@@ -330,6 +330,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     .event-grid,.fundraiser-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
     .fundraiser-card{position:relative;display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--surface)}
     .fundraiser-card>img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--sunk)}
+    .fundraiser-card.is-past>img{filter:grayscale(.7);opacity:.8}
     .fundraiser-body{display:flex;flex-direction:column;flex:1;padding:18px 20px 20px}
     .fundraiser-body .campaign-support-badge{align-self:flex-start;margin-bottom:8px}
     .fundraiser-body h3{font-size:22px}
@@ -341,6 +342,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     .fundraiser-raised strong{color:var(--ink)}
     .fundraiser-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:auto;padding-top:20px}
     .fundraiser-actions .social-share{margin-left:auto}
+    .fundraiser-actions .btn-text{min-height:36px}
     .fundraiser-manage{display:flex;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
     .donation-disclosure{margin:20px 0 0;color:var(--muted);font-size:14px}
     .action-band{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px 48px;margin-top:96px;padding:clamp(28px,5vw,56px);border-radius:var(--radius-lg);background:var(--blue-deep);color:#fff}
